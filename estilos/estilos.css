@@ -1,81 +1,90 @@
-:root {
-    --cor-principal: darkblue;
-    --cor-branca: white;
-    --cor-texto: #333;
-    --cor-preta: rgb(0, 0, 0);
-    --cor-fundo-aside: #eee;
-    --cor-borda-suave: rgb(0 0 0 / 0.2);
-    --cor-borda-imagem: black;
-    --cor-borda-azul: rgb(0, 131, 206);
-    --cor-sombra: gray;
+/* Resetar CSS do meu projeto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    --padding-pequeno: 10px;
-    --padding-medio: 1rem;
-    --padding-grande: 20px;
-
-    --largura-main: 840px;
-    --largura-img-main: 150px;
-    --largura-aside: 20rem;
-    --largura-img-aside: 200px;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    color: #222;
+    background: #fff;
+    margin: 0;
 }
 
 nav {
-    background-color: var(--cor-principal);
-    padding: var(--padding-pequeno);
+    background-color: steelblue;
 }
 
 nav a {
-    color: var(--cor-branca);
+    color: white;
+    padding: 10px;
     display: block;
-    padding: var(--padding-grande);
 }
+
+
 
 h1 {
-    color: var(--cor-principal);
-}
-
-h2 {
-    color: var(--cor-preta);
-    text-align: center;
+    color: steelblue;
 }
 
 main img {
-    width: var(--largura-img-main);
+    margin-left: 20px;
+    margin-right: 17px;
+    margin-bottom: 20px;
+    width: 200px;
     height: auto;
-    border: 1px solid var(--cor-borda-imagem);
+    border: 1px solid steelblue;
     padding: 2px;
-    box-shadow: 0 0 30px var(--cor-sombra);
+    box-shadow: 0 0 30px gray;
+    float: right;
 }
 
 p {
     padding: 0;
 }
 
-main {
-    max-width: var(--largura-main);
-}
-
 aside {
-    width: var(--largura-aside);
-    margin: var(--padding-medio);
-    border: 1px solid var(--cor-borda-suave); 
-    padding: var(--padding-medio);
-    background-color: var(--cor-fundo-aside);
-    color: var(--cor-texto);
-    text-align: justify;
+    width: 20rem;
+    color: #333;
+    text-align: center;
+    position: relative;
 }
 
 aside img {
-    width: var(--largura-img-aside);
+    width: 250px;
     height: auto;
-    display: block;
-    margin: 0 auto;
-    border: 1px solid var(--cor-borda-azul);
-    box-shadow: 0 0 10px var(--cor-sombra);
+}
+
+aside h2 {
+    position: absolute;
+    top: 162px;
+    left: 45px;
+    text-shadow:
+        -1px -1px 0 #000000,
+        1px -1px 0 #000000,
+        -1px 1px 0 #000000,
+        1px 1px 0 #000000;
+    color: white;
 }
 
 footer {
-    margin-top: 15px;
-    border-top: 5px solid var(--cor-texto);
+    margin-top: 1em;
+    border-top: 1px solid #000;
     text-align: center;
+}
+
+/* Seletores de Classe */
+
+.caixa {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1em;
+    margin: 1em;
+    background-color: #eee;
+    color: #333;
+}
+
+.indentacao {
+    padding-left: 2rem;
 }
