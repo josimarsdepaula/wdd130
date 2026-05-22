@@ -1,61 +1,81 @@
-nav {
-    background-color: darkblue;
-    padding: 10px;
+:root {
+    --cor-principal: darkblue;
+    --cor-branca: white;
+    --cor-texto: #333;
+    --cor-preta: rgb(0, 0, 0);
+    --cor-fundo-aside: #eee;
+    --cor-borda-suave: rgb(0 0 0 / 0.2);
+    --cor-borda-imagem: black;
+    --cor-borda-azul: rgb(0, 131, 206);
+    --cor-sombra: gray;
+
+    --padding-pequeno: 10px;
+    --padding-medio: 1rem;
+    --padding-grande: 20px;
+
+    --largura-main: 840px;
+    --largura-img-main: 150px;
+    --largura-aside: 20rem;
+    --largura-img-aside: 200px;
 }
 
-nav a{
-    color: white;
+nav {
+    background-color: var(--cor-principal);
+    padding: var(--padding-pequeno);
+}
+
+nav a {
+    color: var(--cor-branca);
     display: block;
-    padding: 20px;
+    padding: var(--padding-grande);
 }
 
 h1 {
-    color: darkblue;
+    color: var(--cor-principal);
 }
 
 h2 {
-    color: rgb(0, 0, 0);
+    color: var(--cor-preta);
     text-align: center;
 }
 
 main img {
-    width: 150px;
+    width: var(--largura-img-main);
     height: auto;
-    border: 1px solid black;
+    border: 1px solid var(--cor-borda-imagem);
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: 0 0 30px var(--cor-sombra);
 }
 
 p {
-    padding: 0px;
+    padding: 0;
 }
 
 main {
-    max-width: 840px;
+    max-width: var(--largura-main);
 }
 
 aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2); 
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
+    width: var(--largura-aside);
+    margin: var(--padding-medio);
+    border: 1px solid var(--cor-borda-suave); 
+    padding: var(--padding-medio);
+    background-color: var(--cor-fundo-aside);
+    color: var(--cor-texto);
     text-align: justify;
 }
 
 aside img {
-    width: 200px;
+    width: var(--largura-img-aside);
     height: auto;
     display: block;
     margin: 0 auto;
-    border: 1px solid rgb(0, 131, 206);
-    box-shadow: 0 0 10px gray;
+    border: 1px solid var(--cor-borda-azul);
+    box-shadow: 0 0 10px var(--cor-sombra);
 }
 
 footer {
     margin-top: 15px;
-    border-top: 5px solid #333;
+    border-top: 5px solid var(--cor-texto);
     text-align: center;
 }
-
