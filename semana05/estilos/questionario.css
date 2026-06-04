@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 0px auto;
+    background-color: #f2f2f2;
+    color: #333;
+    padding-top: 20px;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: navy;
+    font-size: 1.75rem;
+}
+
+main {
+    display: flex;
+    width: 500px;
+    height: 580px;
+}
+
+form {
+    display: grid;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+}
+
+label {
+    margin-top: 15px;
+    margin: 10px;
+    font-weight: bold;
+
+}
+
+button {
+    margin: 15px 0px;
+    padding: 12px;
+    background-color: navy;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+footer {
+    width: 539px;
+    margin-top: 25px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    padding-top: 15px;
+    color: #777;
+}
+
+input,
+textarea,
+select,
+button {
+    padding: 10px 10px;
+
+}
+
+textarea {
+    width: 500px;
+    height: 150px;
+    border-color: #ccc;
+
+}
+
+input,
+select {
+    border: 1px solid #ccc;
+}
+
+option {
+    font-size: 15px;
+}
+
+tr td {
+    border: 1px solid rgb(91, 91, 91);
+    text-align: center;
+    background-color: rgb(0 0 0);
+    color: white;
+    padding: 15px 10px;
+
+}
+
+input[type="number"] {
+    margin-top: 20px;
+    width: 100%;
+    padding: 8px;
+}
