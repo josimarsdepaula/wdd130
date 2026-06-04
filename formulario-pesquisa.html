@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Usuários</title>
+    <link rel="stylesheet" href="estilos/formulario-pesquisa.css">
+</head>
+
+<body>
+    <header>
+        <h1>WDD130 | Formulário HTML - Pesquisa de Usuário</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Informações do Usuário</legend>
+                <div class="item-formulario coluna2">
+                    <label for="nomecompleto">Nome Completo:</label>
+                    <input type="text" id="nomecompleto" name="nomecompleto">
+                </div>
+                <div class="item-formulario coluna2">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Perguntas</legend>
+                <div class="item-formulario coluna1">
+                    <label for="navegador">Qual é o seu navegador favorito?</label>
+                    <select id="navegador" name="navegador">
+                        <option value="">Selecione</option>
+                        <option>Chrome</option>
+                        <option>Firefox</option>
+                        <option>Edge</option>
+                        <option>Safari</option>
+                    </select>
+                </div>
+                <div class="item-formulario coluna1">
+                    <label for="pet">Você tem um animal de estimação?</label>
+                    <input type="checkbox" id="pet" name="pet">
+                </div>
+                <div class="item-formulario textarea-container">
+                    <label for="lugares">
+                        Liste os lugares onde você morou:
+                    </label>
+                    <textarea id="lugares" name="lugares" rows="5">Curitiba/PR, Campo Grande/MS, Flórida/EUA</textarea>
+                </div>
+            </fieldset>
+            <button type="submit">Enviar Pesquisa</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2026 | Formulário HTML - Atividade de Pesquisa de Usuário | Josimar de Paula</p>
+    </footer>
+</body>
+
+</html>
