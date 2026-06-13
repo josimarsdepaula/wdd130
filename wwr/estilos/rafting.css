@@ -351,3 +351,112 @@ button:hover {
     height: 120px;
     object-fit: cover;
 }
+
+.home-hero {
+    position: relative;
+}
+
+.home-hero img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, .5);
+    padding: 20px;
+}
+
+.newsletter-home {
+    text-align: center;
+    padding: 30px;
+}
+
+.newsletter-home form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.newsletter-home input {
+    padding: 10px;
+}
+
+.cta-home {
+    text-align: center;
+    padding: 30px;
+}
+
+.btn-cta {
+    display: inline-block;
+    padding: 12px 20px;
+    background: var(--cor-secundaria);
+    color: var(--cor-destaque1);
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.home-grid img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* PASSEIOS */
+
+.trip-cta {
+    text-align: center;
+    padding: 30px;
+}
+
+.trip-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.trip-cards article {
+    border: 1px solid #ccc;
+    padding: 15px;
+}
+
+.trip-cards img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.trip-table {
+    margin-top: 40px;
+}
+
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.trip-table th,
+.trip-table td {
+    border: 1px solid #999;
+    padding: 10px;
+    text-align: center;
+}
+
+.trip-table th {
+    background: var(--cor-destaque2);
+}
